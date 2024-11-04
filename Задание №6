@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        checkSign(-1);
+        checkSign(0);
+    }
+
+    static void checkSign(int number) {
+        if (number >= 0) {
+            System.out.println("Положительное число");
+        } else if (number < 0) {
+            System.out.println("Отрицательное число");
+        }
+    }
+}
