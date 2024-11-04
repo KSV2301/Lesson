@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(checkSumRange(0, -10));
+    }
+
+    static boolean checkSumRange(int a, int b) {
+        int sum = a + b;
+        return sum >= 10 && sum <= 20;
+    }
+}
