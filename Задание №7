@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(checkSign(10));
+        System.out.println(checkSign(-5));
+        System.out.println(checkSign(0));
+    }
+
+    static boolean checkSign(int number) {
+        if (number < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
