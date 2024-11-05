@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        int year = 2024;
+        if (checkLeapYear(year)) {
+            System.out.println("Високосный год");
+        } else {
+            System.out.println("Не високосный год");
+        }
+    }
+
+    static boolean checkLeapYear(int year) {
+        if (year % 400 == 0) {
+            return true;
+        } else if (year % 100 == 0) {
+            return false;
+        } else if (year % 4 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
