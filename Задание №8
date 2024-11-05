@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        repeatString("Hello", 3);
+    }
+
+    static void repeatString(String str, int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.println(str);
+        }
+    }
+}
