@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Employee[] employees = new Employee[5];
+
+        employees[0] = new Employee("Иван", "Иванов", "Программист", "ivan@gmail.com", "1234567890", 100000, 30);
+        employees[1] = new Employee("Петр", "Петров", "Аналитик", "petr@gmail.com", "2345678901", 80000, 25);
+        employees[2] = new Employee("Мария", "Сидорова", "Менеджер", "maria@gmail.com", "3456789012", 70000, 35);
+        employees[3] = new Employee("Сергей", "Васильев", "Инженер", "sergey@gmail.com", "4567890123", 90000, 28);
+        employees[4] = new Employee("Анна", "Смирнова", "Дизайнер", "anna@gmail.com", "5678901234", 60000, 22);
+
+        for (int i = 0; i < employees.length; i++) {
+            employees[i].printEmployeeInfo();
+        }
+    }
+}
