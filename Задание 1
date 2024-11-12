@@ -1,0 +1,61 @@
+public class Employee {
+    private String firstName;
+    private String lastName;
+    private String position;
+    private String email;
+    private String phone;
+    private double salary;
+    private int age;
+
+    public Employee(String firstName, String lastName, String position, String email, String phone, double salary, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.position = position;
+        this.email = email;
+        this.phone = phone;
+        this.salary = salary;
+        this.age = age;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void printEmployeeInfo() {
+        System.out.println("ФИО: " + firstName + " " + lastName);
+        System.out.println("Должность: " + position);
+        System.out.println("Email: " + email);
+        System.out.println("Телефон: " + phone);
+        System.out.println("Зарплата: " + salary);
+        System.out.println("Возраст: " + age);
+    }
+
+    public static void main(String[] args) {
+        Employee employee = new Employee("Иван", "Иванов", "Программист", "ivan@gmai;.com", "1234567890", 100000, 30);
+        employee.printEmployeeInfo();
+    }
+}
